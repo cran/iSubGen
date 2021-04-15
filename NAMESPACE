@@ -1,0 +1,8 @@
+exportPattern("^[[:alpha:]]+");
+importFrom("utils", "read.table", "write.table");
+importFrom("stats", "anova", "cor", "cutree", "lm","p.adjust","phyper","as.dist","median","predict","sd","t.test","wilcox.test","dist");
+importFrom("grDevices", "colorRampPalette");
+importFrom("cluster","diana");
+importFrom("ConsensusClusterPlus","ConsensusClusterPlus","calcICL");
+importFrom("philentropy","distance");
+import(tensorflow, keras);
