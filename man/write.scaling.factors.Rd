@@ -3,7 +3,7 @@
 \title{Write scaling factors to file}
 \description{Write scaling factors to file}
 \usage{
-write.scaling.factors(scaling.factors, scaling.factor.files.dir)
+write.scaling.factors(scaling.factors, scaling.factor.files.dir=NULL)
 }
 \arguments{
   \item{scaling.factors}{list with the scaling factors created by calculate.scaling}
@@ -13,6 +13,7 @@ write.scaling.factors(scaling.factors, scaling.factor.files.dir)
 \value{No return value, called for side effects}
 \author{Natalie Fox}
 \examples{
+\dontrun{
 
 # load the aberration profiles for three data types 
 example.molecular.data.dir <- paste0(path.package('iSubGen'),'/exdata/');
@@ -28,5 +29,6 @@ for(i in c('cna','snv','methy')) {
 scaling.factors <- calculate.scaling(molecular.data);
 
 # save the scaling factors to file
-write.scaling.factors(scaling.factors, example.molecular.data.dir);
+write.scaling.factors(scaling.factors);
+}
 }

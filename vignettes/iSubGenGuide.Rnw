@@ -1,5 +1,5 @@
 %\VignetteEngine{knitr::knitr_notangle}
-%\VignetteIndexEntry{Guide for using ISOpureR}
+%\VignetteIndexEntry{Guide for using iSubGen}
 
 \documentclass{article}
 \usepackage{graphicx}
@@ -14,8 +14,6 @@
 \usepackage{color}
 \usepackage{tikz}
 \usepackage{float}
-%\usetikzlibrary{bayesnet}
-%\usetikzlibrary{arrows,shapes,calc}
 \usepackage[unicode=true,pdfusetitle,
 bookmarks=true,bookmarksnumbered=true,bookmarksopen=true,bookmarksopenlevel=2,
 breaklinks=false,pdfborder={0 0 1},backref=false,colorlinks=false]
@@ -71,7 +69,7 @@ This will allow patient classification based on whether the same relationships a
 	\centering
 		\includegraphics[width = \textwidth]{Figures/iSubGen_figure_methodology_overview.png}
 		\caption{\textbf{iSubGen overview. Compressed features from feature reduction and pairwise similarity measures are merged into a single matrix for pattern discovery.}}
-		\label{fig:isopure}
+		\label{fig:isubgen}
 \end{figure}
 
 \newpage
@@ -121,7 +119,7 @@ A benefit of using autoencoders for compressing features is that autoencoders ca
 	\centering
 		\includegraphics[width=9.8cm]{Figures/iSubGen_figure_methodology_autoencoders.png}
 		\caption{\textbf{Schematic for iSubGen feature reduction using autoencoders.}}
-		\label{fig:isopure}
+		\label{fig:isubgen}
 \end{figure}
 
 \newpage
@@ -185,7 +183,7 @@ and might elucidate whether there are different biological regulation subgroups 
 	\centering
 		\includegraphics[width=9.8cm]{Figures/iSubGen_figure_methodology_correlations.png}
 		\caption{\textbf{Schematic for creating iSubGen pairwise similarity measures.}}
-		\label{fig:isopure}
+		\label{fig:isubgen}
 \end{figure}
 
 \newpage

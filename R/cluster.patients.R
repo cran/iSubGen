@@ -17,7 +17,6 @@ cluster.patients <- function(
 	setwd(parent.output.dir);
 	on.exit(setwd(func.start.dir));
 
-
 	if(nrow(data.matrix) > 1) {
 
 		# Defining function for when there is missing data here because
